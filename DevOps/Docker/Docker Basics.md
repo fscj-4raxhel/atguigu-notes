@@ -132,7 +132,7 @@
 
 * 镜像是又一层层的文件系统组成，UnionFS。
 * bootfs(boot file system)主要包含
-  * bootloader：主要是引导加载kernel，Linux刚启动时会加载bootfs文件系统。<span style="color:red;">Docker惊喜那个最底层是bootfs</span>，在这一层上与我们经典的Linux系统是一样的，包含boot加载器和内核。
+  * bootloader：主要是引导加载kernel，Linux刚启动时会加载bootfs文件系统。<span style="color:red;">Docker景象那个最底层是bootfs</span>，在这一层上与我们经典的Linux系统是一样的，包含boot加载器和内核。
   * kernel：boot加载完以后，整个内核就都在内存中了，此时内存的使用权已由bootfs交给内核，此时系统也会卸载bootfs
 * rootfs（root file system）：在bootfs之上，包含的就是经典Linux系统中的`/dev`，`/proc`，`/bin`，`/etc`，等标准目录和文件。rootfs就是各种不同的操作系统发型版`Ubunt`、`CentOS`等
 
